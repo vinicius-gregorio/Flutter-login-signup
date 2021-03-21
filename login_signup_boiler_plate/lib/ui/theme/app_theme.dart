@@ -40,7 +40,7 @@ ThemeData appTheme() {
     primaryColorDark: primaryColorDark,
     primaryColorLight: primaryColorLight,
     errorColor: Colors.red,
-    scaffoldBackgroundColor: primaryColorLight,
+    scaffoldBackgroundColor: Colors.white,
     fontFamily: 'XanhMono',
     textTheme: TextTheme(
         headline1: headline1, headline2: headline2, headline3: headline3),
