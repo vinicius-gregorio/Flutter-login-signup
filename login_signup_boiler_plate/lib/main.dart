@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_signup_boiler_plate/pages/login/login_page.dart';
+import 'package:login_signup_boiler_plate/ui/pages/login/login_page.dart';
 
 void main() {
   runApp(MyApp());
