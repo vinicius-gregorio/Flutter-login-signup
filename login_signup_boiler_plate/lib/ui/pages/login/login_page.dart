@@ -16,7 +16,7 @@ class LoginPage extends StatelessWidget {
                   padding: EdgeInsets.only(top: 30),
                   height: maxHeight * 0.3,
                   width: maxWidth,
-                  color: Colors.red,
+                  color: Color.fromRGBO(175, 139, 255, 1),
                   child: Image(
                     image: AssetImage('lib/ui/assets/logo/logo.png'),
                   ),
@@ -29,9 +29,29 @@ class LoginPage extends StatelessWidget {
                 Form(
                     child: Column(
                   children: [
-                    TextFormField(),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        icon: Icon(
+                          Icons.email,
+                          color: Theme.of(context).primaryColorLight,
+                        ),
+                        labelText: 'E-mail',
+                        labelStyle: Theme.of(context).textTheme.headline3,
+                      ),
+                      keyboardType: TextInputType.emailAddress,
+                    ),
                     Padding(padding: EdgeInsets.symmetric(vertical: 10)),
-                    TextFormField(),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        icon: Icon(
+                          Icons.lock,
+                          color: Theme.of(context).primaryColorLight,
+                        ),
+                        labelText: 'Password',
+                        labelStyle: Theme.of(context).textTheme.headline3,
+                      ),
+                      obscureText: true,
+                    ),
                   ],
                 ))
               ],
