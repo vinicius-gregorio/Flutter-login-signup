@@ -80,7 +80,7 @@ class MobileLogin extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Theme.of(context).primaryColorLight),
                       width: maxWidth,
-                      child: Text('Entrar',
+                      child: Text('Login',
                           style: Theme.of(context).textTheme.headline2),
                     ),
                   ),
@@ -98,7 +98,7 @@ class MobileLogin extends StatelessWidget {
                       alignment: Alignment.center,
                       decoration: BoxDecoration(color: Colors.grey[300]),
                       width: maxWidth,
-                      child: Text('Cadastrar',
+                      child: Text('Signup',
                           style: Theme.of(context).textTheme.headline2),
                     ),
                   ),

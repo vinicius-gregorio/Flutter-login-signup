@@ -41,6 +41,17 @@ class MobileSignup extends StatelessWidget {
                 TextFormField(
                   decoration: InputDecoration(
                     icon: Icon(
+                      Icons.person,
+                      color: Theme.of(context).primaryColorLight,
+                    ),
+                    labelText: 'Name',
+                    labelStyle: Theme.of(context).textTheme.headline3,
+                  ),
+                  keyboardType: TextInputType.emailAddress,
+                ),
+                TextFormField(
+                  decoration: InputDecoration(
+                    icon: Icon(
                       Icons.email,
                       color: Theme.of(context).primaryColorLight,
                     ),
@@ -49,7 +60,6 @@ class MobileSignup extends StatelessWidget {
                   ),
                   keyboardType: TextInputType.emailAddress,
                 ),
-                Padding(padding: EdgeInsets.symmetric(vertical: 10)),
                 TextFormField(
                   decoration: InputDecoration(
                     icon: Icon(
@@ -61,12 +71,18 @@ class MobileSignup extends StatelessWidget {
                   ),
                   obscureText: true,
                 ),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: TextButton(
-                      onPressed: () {}, child: Text('Forgot my password')),
+                TextFormField(
+                  decoration: InputDecoration(
+                    icon: Icon(
+                      Icons.lock,
+                      color: Theme.of(context).primaryColorLight,
+                    ),
+                    labelText: 'Confirm Password',
+                    labelStyle: Theme.of(context).textTheme.headline3,
+                  ),
+                  obscureText: true,
                 ),
-                Padding(padding: EdgeInsets.symmetric(vertical: 10)),
+                Padding(padding: EdgeInsets.symmetric(vertical: 20)),
                 InkWell(
                   onTap: () {
                     print('tapped dumbass');
@@ -79,7 +95,7 @@ class MobileSignup extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Theme.of(context).primaryColorLight),
                       width: maxWidth,
-                      child: Text('Entrar',
+                      child: Text('Signup',
                           style: Theme.of(context).textTheme.headline2),
                     ),
                   ),
@@ -96,7 +112,7 @@ class MobileSignup extends StatelessWidget {
                       alignment: Alignment.center,
                       decoration: BoxDecoration(color: Colors.grey[300]),
                       width: maxWidth,
-                      child: Text('Voltar',
+                      child: Text('Go back',
                           style: Theme.of(context).textTheme.headline2),
                     ),
                   ),
